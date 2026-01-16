@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إنجازاتي</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="app.js"></script>
+</head>
+<body class="dark">
+
+<button class="theme-toggle" id="themeToggle">🌙</button>
+
+<div class="container">
+    <header>
+        <h1>إنجازاتي</h1>
+        <div class="stats">
+            <div class="stat-card" id="freezeCard">
+                ❄️<span id="freezeCount">0</span><br>تجميد
+            </div>
+            <div class="stat-card" id="streakCard">
+                🔥<span id="streakCount">0</span><br>شعلة
+            </div>
+            <div class="stat-card" id="xpCard">
+                XP<span id="xpCount">0</span><br>نقاط
+            </div>
+        </div>
+    </header>
+
+    <div id="taskInput">
+        <input id="newTask" placeholder="ماذا سننجز اليوم؟">
+        <button id="addTaskBtn">إضافة</button>
+    </div>
+
+    <div class="task-list" id="tasks"></div>
+</div>
+
+<div class="modal" id="imageModal" onclick="closeModal()">
+    <img id="modalImg" src="">
+</div>
+
+</body>
+</html>
